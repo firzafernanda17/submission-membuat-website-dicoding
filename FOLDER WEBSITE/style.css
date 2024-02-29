@@ -1,0 +1,261 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    scroll-behavior: smooth;
+}
+
+header nav {
+    position: sticky;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background-color: #2d2d30;
+    justify-content: space-evenly;
+}
+
+
+header nav ul li a {
+    color: white; 
+    text-decoration: none; 
+    padding: 10px 15px; 
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: white; 
+    color: black; 
+}
+
+ul {
+    width: 500px;
+    display: flex;
+    margin: 30 px 150 px;
+    justify-content: space-evenly;
+    color: white;
+    list-style-type: none;
+}
+
+ul a {
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    white-space: nowrap;
+}
+
+#jumbotron{
+    position: relative;
+    background-image: url(asset/gambar/bgatas.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#jumbotron-text h1, #jumbotron-text h3 {
+    pointer-events: none;
+    text-align: center;
+    color: white;
+    text-shadow: -1.5px -1.5px 0 #000,  
+                 1.5px -1.5px 0 #000,
+                -1.5px 1.5px 0 #000,
+                 1.5px 1.5px 0 #000; 
+}
+
+#jumbotron-text h1 {
+    font-size: 36px;
+}
+
+#jumbotron-text h3 {
+    font-size: 24px;
+}
+
+#jumbotron-text a {
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    transition: .3;
+}
+
+#jumbotron-text a:hover {
+    background-color: white;
+    color: black;
+}
+
+.kotakganal {
+    width: 80%;
+    margin: 20px 250px;
+    padding: 40px;
+    
+}
+
+.jumbo-kotak h3{
+    margin-top: 30px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.baris {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+#paket, .kotak, .gambar{
+background-color: #1e1e1e;
+}
+
+#paket h1{
+    color: white;
+}
+
+.baris h2{
+    color: white;
+}
+
+#paket a {
+    margin-left: 65px;
+    color: white;
+    border: 2px solid white;
+    padding: 5px 10px;
+    transition: .3;
+}
+
+#paket a:hover {
+    background-color: white;
+    color: black;
+}
+
+
+.kotak {
+    width: 48%;
+    position: relative;
+    overflow: hidden;
+}
+
+.kotak .detail {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 15px;
+    transform: translateY(100%);
+    transition: transform 0.3s;
+    box-sizing: border-box;
+}
+
+.kotak .gambar {
+    position: relative;
+    overflow: hidden;
+}
+
+.kotak .gambar img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.kotak .gambar:hover img {
+    transform: scale(1.1);
+}
+
+.kotak:hover .detail {
+    transform: translateY(0);
+}
+
+.kotak h4, .kotak p, .kotak h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+.kotak .gambar {
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.kotak .gambar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+#tentang-kami {
+    height: 100vh;
+    background-color: rgb(236, 236, 209);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#tentang-kami{
+    background-color: #1e1e1e;
+    display: flex;
+    align-items: center;
+}
+
+.tentang-kami-img{
+    flex-basis: 50%;
+    background-image: url('asset/gambar/tentangkami.jpg');
+    background-size: cover;
+    height: 100%;
+    display: flex;
+}
+
+.tentang-kami-desc{
+    flex-basis: 60%;
+    padding: 45px;
+}
+
+.tentang-kami-desc > h1 {
+    color:white;
+}
+
+.tentang-kami-desc > p{
+    margin: 30px 0px 10px;
+    line-height: 2;
+    text-align: justify;
+    color: wheat;
+}
+
+.jumlah{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.tentang-kami-pemisah{
+    height:40px;
+    width:2px;
+    margin: 0px 35px;
+    border-radius: 5px;
+    background-color: #606060;
+}
+
+.jumlah-header{
+    font-size:35px; 
+    font-weight: bold;
+    color: white;
+}
+
+
+.jumlah-desc{
+    font-weight: bold;
+    margin-left: 6px;
+    color: white;
+}
+
